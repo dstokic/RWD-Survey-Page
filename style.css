@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+:root {
+  /*variables go here*/
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-image: linear-gradient(
+      rgba(0, 255, 175, 0.7),
+      rgba(210, 255, 240, 0.5)
+    ),
+    url("https://www.wncoutdoors.info/wp-content/uploads/2019/11/2019-11-10_chimney-rock-state-park_rumbling-bald-trail-forest-fall-color.jpg");
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header{
+  text-align: center;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 0.25em;
+}
+
+h1{
+  margin-bottom: 5px;
+}
+
+header p{
+  margin-top: 5px;
+  margin-bottom: 5%;
+  font-size: 15px;
+}
+
+body{
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+
+.holder{
+  background: rgba(255, 255, 255, 0.6);
+  border: 10px solid rgba(255, 255, 255, 0.7);
+  width: 100%;
+  margin: 3.125rem auto 0 auto;
+}
+
+@media (min-width: 576px){
+  .holder{
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px){
+  .holder{
+    max-width: 720px;
+  }
+}
+
+.form-group{
+  margin: 20px;
+  padding: 5px;
+  border-radius: 150px;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  padding: 2px;
+}
+
+#email,
+#name, 
+#number{
+  width: 98.5%;
+  border: none;
+  border-radius: 7px;
+  padding: 4px;
+  padding-left: 8px;
+}
+
+#dropdown{
+  width: 45%;
+  border: none;
+  border-radius: 7px;
+  padding-left: 8px;
+}
+
+#email:hover,
+#name:hover, 
+#number:hover,
+#dropdown:hover{
+  box-shadow: 6px 3px 5px rgb(164, 205, 161);
+}
+
+label,
+p{
+  font-size: 16px;
+}
+
+button {
+  border: none;
+}
+
+#submit{
+  background: rgba(176, 255, 173, 0.7);
+  width: 100%;
+  padding: 10px;
+}
+
+#submit:hover{
+  background: rgba(164, 255, 161, 1);
+}
+
+#weird{
+  padding-left: 5px;
+}
+
+.input-radio,
+.input-checkbox {
+  display: inline-block;
+  margin-right: 0.625rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+
+.input-textarea {
+  min-height: 75px;
+  width: 98.5%;
+  padding: 5px;
+}
+
+.hint{
+  font-size: 12px;
+}

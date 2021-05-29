@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Survey</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<div class="holder">
+  <header>    
+    <h1 id="title" class="center">Park Improvement Survey</h1>
+    <p id="description" class="desc center">Quickly take some time and answer these questions to help improve the park system</p>
+  </header>
+  
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input type="text" name="name" id="name" placeholder="Enter your full name" class="form-control" required/>
+    </div>
+
+
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="Enter your email" class="form-control" required/>
+    </div>
+
+
+    <div class="form-group">
+      <label id="number-label" for="rating">Park Rating out of 10<span class="hint" id="weird">(1 being terrible, 10 being fantastic)</span></label>
+      <input type="number" name="rating" id="number" min="1" max="10" placeholder="Enter your rating" class="form-control" required/>
+    </div>
+
+
+    <div class="form-group">
+      <p>Which park did you go to?</p>
+      <select id="dropdown" class="form-control" name="park">
+        <option selected disabled value>Select park</option>
+        <option value="knight-park">Knight Park</option>
+        <option value="cooper-river-park">Cooper River Park</option>
+        <option value="newton-lake-park">Newton Lake Park</option>
+        <option value="other-park">Other</option>
+      </select>
+    </div>
+
+
+    <div class="form-group">
+      <p>How clean was the park during your visit?</p>
+      <label>
+        <input name="cleanliness" value="clean" type="radio" class="input-radio"/>
+      Very clean</label>
+      
+      <label>
+        <input name="cleanliness" value="kinda-clean" type="radio" class="input-radio"/>
+      There was some litter</label>
+      
+      <label>
+        <input name="cleanliness" value="not-clean" type="radio" class="input-radio"/>
+      It was filthy</label>
+    </div>
+    
+    
+    <div class="form-group">
+      <p>What parts of the park need to the most improvement? <span class="hint">(Select as many as apply)</span></p>
+      <label>
+        <input name="improve" value="cleanliness" type="checkbox" class="input-checkbox"/>
+      Cleanliness</label>
+      
+      <label>
+        <input name="improve" value="playgrounds" type="checkbox" class="input-checkbox"/>
+      Playgrounds</label>
+      
+      <label>
+        <input name="improve" value="pathways" type="checkbox" class="input-checkbox"/>
+      Pathways</label>
+      
+      <label>
+        <input name="improve" value="security" type="checkbox" class="input-checkbox"/>
+      Security</label>
+      
+      <label>
+        <input name="improve" value="seating" type="checkbox" class="input-checkbox"/>
+      Seating</label>
+      
+      <label>
+        <input name="improve" value="scenery" type="checkbox" class="input-checkbox"/>
+      Scenery</label>
+      
+      <label>
+        <input name="improve" value="community-events" type="checkbox" class="input-checkbox"/>
+      Community Events</label>
+    </div>
+    
+    
+    <div class="form-group">
+      <p>Anything else you want to add?</p>
+      <textarea id="additional-comments" class="input-textarea" name="additional-comment" placeholder="Start typing here..."></textarea>
+    </div>
+    
+    
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button" href="">
+    Submit</div>
+    
+    
+  </form>
+
+</div>
+<!-- partial -->
+  
+</body>
+</html>
